@@ -5,10 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "npx codeceptjs init",
-    "test": "codeceptjs run",
     "test2": "jest --verbose",
     "init": "jest --init",
-    "test3": "mocha moc/*.spec.js"
+    "test3": "mocha moc/*.spec.js",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --browser chrome --spec 'cypress/integration/cypress_auto_sample.js'",
+    "testcafe:run": "testcafe chrome testcafe/testcafe_auto_sample.js",
+    "wdio:run": "wdio run wdio.conf.js --spec ./webdriverio/webdriverio_auto_sample.js",
+    "wdio:start": "npx wdio run ./wdio.config.js",
+    "codeceptjs:run": "codeceptjs run ./codeceptjs/codeceptjs_auto_sample.js --steps"
   },
   "keywords": [],
   "author": "",
@@ -17,10 +22,19 @@
     "directory": "https://github.com/htmlfriend/testJShomeWork.git"
   },
   "devDependencies": {
-    "codeceptjs": "^3.0.5",
-    "puppeteer": "^7.0.1"
+    "@wdio/local-runner": "^6.1.17",
+    "@wdio/mocha-framework": "^6.1.17",
+    "@wdio/spec-reporter": "^6.1.14",
+    "@wdio/sync": "^6.1.14",
+    "chromedriver": "^83.0.0",
+    "codeceptjs": "^2.6.5",
+    "cypress": "^6.4.0",
+    "puppeteer": "^3.3.0",
+    "testcafe": "^1.8.6",
+    "wdio-chromedriver-service": "^6.0.3"
   },
   "dependencies": {
+    "@wdio/cli": "^6.12.1",
     "chai": "^4.3.0",
     "jest": "^26.6.3",
     "mocha": "^8.1.3"
