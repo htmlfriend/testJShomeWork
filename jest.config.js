@@ -32,7 +32,7 @@ module.exports = {
 
   // Indicates which provider should be used to instrument code for coverage
   coverageProvider: "v8",
-  preset: "jest-puppeteer",
+  // preset: "jest-puppeteer",
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
   //   "json",
@@ -73,7 +73,7 @@ module.exports = {
   // An array of file extensions your modules use
   moduleFileExtensions: [
     "js",
-    //   "json",
+    "json",
     //   "jsx",
     //   "ts",
     //   "tsx",
@@ -146,10 +146,7 @@ module.exports = {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-  // testMatch: [
-  //   "**/__tests__/**/*.[jt]s?(x)",
-  //   "**/?(*.)+(spec|test).[tj]s?(x)"
-  // ],
+  // testMatch: ["**/tests/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [
@@ -184,11 +181,22 @@ module.exports = {
   // unmockedModulePathPatterns: undefined,
 
   // Indicates whether each individual test should be reported during the run
-  // verbose: undefined,
+  verbose: true,
 
   // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
   // watchPathIgnorePatterns: [],
 
   // Whether to use watchman for file crawling
   // watchman: true,
+
+  reporters: ["default"],
+  moduleFileExtensions: ["js", "json"],
+  transform: {
+    "^.+\\.jsx?$": "babel-jest",
+  },
+  testMatch: ["**/tests/*.js"],
+  globals: {
+    url: "",
+    testTimeout: 50000,
+  },
 };

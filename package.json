@@ -13,7 +13,8 @@
     "testcafe:run": "testcafe chrome testcafe/testcafe_auto_sample.js",
     "wdio:run": "wdio run wdio.conf.js --spec ./webdriverio/webdriverio_auto_sample.js",
     "wdio:start": "npx wdio run ./wdio.config.js",
-    "codeceptjs:run": "codeceptjs run ./codeceptjs/codeceptjs_auto_sample.js --steps"
+    "codeceptjs:run": "codeceptjs run ./codeceptjs/codeceptjs_auto_sample.js --steps",
+    "test": "jest --config jest.config.js --colors --testTimeout=50000"
   },
   "keywords": [],
   "author": "",
@@ -34,7 +35,10 @@
     "wdio-chromedriver-service": "^6.0.3"
   },
   "dependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
     "@wdio/cli": "^6.12.1",
+    "axios": "^0.19.2",
     "chai": "^4.3.0",
     "jest": "^26.6.3",
     "mocha": "^8.1.3"
