@@ -13,7 +13,7 @@
     "testcafe:run": "testcafe chrome testcafe/testcafe_auto_sample.js",
     "wdio:run": "wdio run wdio.conf.js --spec ./webdriverio/webdriverio_auto_sample.js",
     "wdio:start": "npx wdio run ./wdio.config.js",
-    "codeceptjs:run": "codeceptjs run ./codeceptjs/codeceptjs_auto_sample.js --steps",
+    "codeceptjs:run": "codeceptjs run  --steps",
     "test": "jest --config jest.config.js --colors --testTimeout=50000"
   },
   "keywords": [],

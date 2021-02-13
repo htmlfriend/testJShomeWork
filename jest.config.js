@@ -194,7 +194,9 @@ module.exports = {
   transform: {
     "^.+\\.jsx?$": "babel-jest",
   },
-  testMatch: ["**/tests/*.js"],
+  // testMatch: ["**/tests/*.js"],
+  testMatch: ["**/codeceptjs/*.js"],
+
   globals: {
     url: "",
     testTimeout: 50000,

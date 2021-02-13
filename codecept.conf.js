@@ -9,9 +9,15 @@ exports.config = {
   output: "./output",
   helpers: {
     Puppeteer: {
-      url: "https://otus.ru",
-      show: true,
-      windowSize: "",
+      // url: "https://otus.ru",
+      // show: true,
+      // windowSize: "",
+    },
+    REST: {
+      endpoint: "",
+      // onRequest: (request) => {
+      //   return request;
+      // },
     },
   },
   include: {
@@ -25,7 +31,7 @@ exports.config = {
       enabled: true,
     },
     screenshotOnFail: {
-      enabled: true,
+      enabled: false,
     },
   },
 };
