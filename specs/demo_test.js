@@ -47,12 +47,15 @@ Scenario.skip("Profile new user by register steps", (I) => {
   I.see(`Hi ${randomName}`);
 });
 
+// for modal window
+// actor
 Scenario.skip("Login the register users", (I) => {
   I.say("data is ready");
   const name = "demo";
   const password = "demo";
   I.say("open the browser");
   I.amOnPage("https://try.vikunja.io/");
+  // I actor from steps_file.js
   I.login(name, password);
   I.see(`Hi ${name}`);
 });

@@ -195,10 +195,12 @@ module.exports = {
     "^.+\\.jsx?$": "babel-jest",
   },
   // testMatch: ["**/tests/*.js"],
-  testMatch: ["**/codeceptjs/*.js"],
+  // testMatch: ["**/codeceptjs/*.js"],
+  // testMatch: ["**/specs/step?.js"],
+  // testMatch: ["**/specs/step4.js"],
+  testMatch: ["**/specs/step5.js"],
 
   globals: {
-    url: "",
-    testTimeout: 50000,
+    // testTimeout: 50000,
   },
 };
