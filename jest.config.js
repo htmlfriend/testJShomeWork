@@ -198,7 +198,9 @@ module.exports = {
   // testMatch: ["**/codeceptjs/*.js"],
   // testMatch: ["**/specs/step?.js"],
   // testMatch: ["**/specs/step4.js"],
-  testMatch: ["**/specs/step5.js"],
+  // testMatch: ["**/specs/step5.js"],
+  // testMatch: ["**/specs/step6.js"],
+  testMatch: ["**/specs/step7.js"],
 
   globals: {
     // testTimeout: 50000,

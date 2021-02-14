@@ -1,10 +1,9 @@
-const { BasePage } = require("../step5/basePage");
+const { BasePage } = require("../step6/basePage");
 
 class FillData extends BasePage {
-  constructor(page, userdata) {
+  constructor(page) {
     super(page);
     this.page = page;
-    this.userdata = userdata;
     this.emailField = "#email";
     this.usernameField = "#username";
     this.passwordField = "#password1";
@@ -20,4 +19,4 @@ class FillData extends BasePage {
   }
 }
 
-module.exports = FillData;
+module.exports = { FillData };
