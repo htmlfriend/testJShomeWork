@@ -1,13 +1,13 @@
 const { test, afterEach, beforeEach } = require("@jest/globals");
-const { link, run, stop } = require("../step7/browser");
-const { MainPage } = require("../step7/mainPage");
-const { FillData } = require("../step7/fillData");
-const { buildUser } = require("../data/step7/buildUser");
-const { CurrentPage } = require("../step7/currentTAskPage");
+const { link, run, stop } = require("../step8/browser");
+const { MainPage } = require("../step8/mainPage");
+const { FillData } = require("../step8/fillData");
+const { buildUser } = require("../data/step8/buildUser");
+const { CurrentPage } = require("../step8/currentTAskPage");
 
 let page, mainPage, fillData, currentPage;
 
-const data = require("../data/step7/account.json");
+const data = require("../data/step8/account.json");
 
 describe("Authorization", () => {
   beforeEach(async () => {

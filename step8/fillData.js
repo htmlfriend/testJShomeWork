@@ -1,9 +1,10 @@
-const { BasePage } = require("../step7/basePage");
+const { BasePage } = require("./basePage");
 
 class FillData extends BasePage {
-  constructor(page) {
+  constructor(page, rootSelector = "registationPage") {
     super(page);
     this.page = page;
+    this.rootSelector = rootSelector;
     this.emailField = "#email";
     this.usernameField = "#username";
     this.passwordField = "#password1";

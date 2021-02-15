@@ -1,8 +1,10 @@
-const { BasePage } = require("../step6/basePage");
+let { BasePage } = require("./basePage");
 
 class MainPage extends BasePage {
-  constructor(page) {
+  constructor(page, rootSelector = "mainPage") {
     super(page);
+    // this.page = page;
+    this.rootSelector = rootSelector;
     this.passwordField = "#password";
     this.usernameField = "#username";
     this.loginButton = ".is-primary";
@@ -10,10 +12,10 @@ class MainPage extends BasePage {
     this.lastRegButton = ".button:nth-child(1)";
   }
   async clickReg() {
-    return await this.page.click(this.redButton);
+    await this.page.click(this.redButton);
   }
   async clickLastReg() {
-    return await this.page.click(this.lastRegButton);
+    await this.page.click(this.lastRegButton);
   }
   async login(username, password) {
     await this.page.fill(this.passwordField, password);

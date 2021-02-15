@@ -200,7 +200,8 @@ module.exports = {
   // testMatch: ["**/specs/step4.js"],
   // testMatch: ["**/specs/step5.js"],
   // testMatch: ["**/specs/step6.js"],
-  testMatch: ["**/specs/step7.js"],
+  // testMatch: ["**/specs/step7.js"],
+  testMatch: ["**/specs/step8.js"],
 
   globals: {
     // testTimeout: 50000,

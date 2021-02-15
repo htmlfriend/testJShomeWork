@@ -1,9 +1,10 @@
-const { BasePage } = require("../step7/basePage");
+const { BasePage } = require("./basePage");
 
 class CurrentPage extends BasePage {
-  constructor(page) {
-    super();
+  constructor(page, rootSelector = "CurrentTaskPage") {
+    super(page);
     this.page = page;
+    this.rootSelector = rootSelector;
     this.profileField = ".username";
     // ".user > .dropdown > .dropdown-trigger > .button > .username";
   }

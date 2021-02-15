@@ -9,6 +9,9 @@ class MainPage extends BasePage {
   async clickReg() {
     return await this.page.click(this.redButton);
   }
+  async title() {
+    return await this.page.title();
+  }
 }
 
 module.exports = { MainPage };
