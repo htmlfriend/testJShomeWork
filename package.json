@@ -20,7 +20,8 @@
     "show:allure": "allure serve output",
     "show:html": "codeceptjs run --reporter mochawesome",
     "create:helper": "npx codeceptjs gh",
-    "init:helper": "npx codeceptjs def"
+    "init:helper": "npx codeceptjs def",
+    "run:testomat": "codeceptjs run TESTOMATIO=cffcdd13c9gk"
   },
   "keywords": [],
   "author": "",
@@ -35,7 +36,7 @@
     "@wdio/sync": "^6.1.14",
     "allure-commandline": "^2.13.8",
     "chromedriver": "^83.0.0",
-    "codeceptjs": "^2.6.5",
+    "codeceptjs": "^3.0.5",
     "cypress": "^6.4.0",
     "puppeteer": "^3.3.0",
     "testcafe": "^1.8.6",
@@ -45,6 +46,7 @@
     "@babel/core": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
     "@jest/globals": "^26.6.2",
+    "@testomatio/reporter": "^0.3.1",
     "@wdio/cli": "^6.12.1",
     "axios": "^0.19.2",
     "chai": "^4.3.0",
